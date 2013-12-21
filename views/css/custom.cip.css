@@ -187,6 +187,7 @@ li.less-listing{
 }
 .bg-arrow{
 	background:transparent url(../images/arrows/arrow-right-full.png) no-repeat center right;
+	padding-right: 40px;
 }
 .form-group,.fm-group{
 	margin-bottom:30px;
