@@ -103,7 +103,8 @@ img.bal-copy{
 	width: 100%;
 	font-weight:normal;
 	float:left;
-	padding: 30px 52px 30px 12px;
+	padding: 25px 20px;
+	height: 50px;
 	font-size: 1.3em;
 	line-height: 150%;
 	color: #555555;
@@ -126,7 +127,7 @@ img.bal-copy{
 }
 button.home-button{
 	border-radius: 0px 4px 4px 0;
-	padding: 20px 12px;
+	padding: 15px 12px;
 }
 .span-full{
 	margin:15px 0; 
@@ -135,7 +136,7 @@ button.home-button{
 	font-size:1.6em;
 }
 .span-full .btn{
-	padding: 16px 12px;
+	padding: 9px 12px;
 }
 .course-thumbs{
 	margin-bottom:10px;
@@ -219,10 +220,11 @@ select.filter-home.form-control{
 	border-radius: 40px;
 }
 .filter-wrapper .btn{
-	padding: 17px 12px;
+	padding: 11px 26px;
 	margin-bottom: 0;
 	font-size: 20px;
-	border-radius: 32px;
+	border-radius: 25px;
+	line-height:22px;
 }
 .italisize{
 	font-style:italic;
@@ -260,4 +262,21 @@ h3{
 }
 .dropdown-menu {
 	left: 15px;
+}
+a {
+	color: #f59f0c;
+	text-decoration: none;
+}
+a {
+	color: #e3930b;
+}
+.btn-default {
+	color: #fff;
+	background-color: #f59f0c;
+	border-color: #e5940a;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+	color: #fff;
+	background-color: #dd8d05;
+	border-color: #dd8d05;
 }
