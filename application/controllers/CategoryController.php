@@ -7,7 +7,9 @@ class CategoryController extends Zend_Controller_Action {
     }
     //    /category
     public function indexAction(){
-        
+       $modelContent=new Model_Content();
+       $categories=$modelContent->getCategories();
+       $this->view->categories=$categories;
     }
     
         //   /category/name

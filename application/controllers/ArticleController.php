@@ -9,11 +9,11 @@ class ArticleController extends Zend_Controller_Action {
         
     }
 
-    public function weekAction($id) {
+    public function weekAction() {
         $request = $this->getRequest();
         $id = $request->GetParam('id');
-        $modelContent = new Content();
-        $weekContent = $modelContent->week($id);
+        $modelContent = new Model_Content();
+        $weekContent = $modelContent->getWeek($id);
         $this->view->weekContent = $weekContent;
     }
     public function dayAction(){
@@ -31,7 +31,7 @@ class ArticleController extends Zend_Controller_Action {
         $id = $request->GetParam('id');
         $modelContent = new Model_Content();
         $article = $modelContent->getArticleById($id);
-       
+     
         $this->view->article = $article;
     }
 
