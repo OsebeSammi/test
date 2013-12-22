@@ -34,7 +34,7 @@ $Router = $FrontController->getRouter();
 $Router->addRoute("category",
 			new Zend_Controller_Router_Route
 			(
-			"articles/category/:name",
+			"articles/category/:slug",
 			array
 			("controller" => "category",
 			"action" => "category") ));

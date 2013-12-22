@@ -26,12 +26,12 @@ $categories = $this->categories;
                                     <div class="row">
                                         <div class="col-xs-5 col-sm-5">
                                             <div class="cat-image">
-                                                <a href=""><img src="/images/content/samplecat.jpg" alt="category"/></a>
+                                                <a href="/articles/category/<?php echo $category->TE_category_slug ?>"><img src="/images/content/samplecat.jpg" alt="category"/></a>
                                             </div>
                                         </div>
                                         <div class="col-xs-7 col-sm-7">
                                             <div class="less-title">
-                                                <a href=""> <?php print_r($category->TE_categories); ?></a>
+                                                <a href="/articles/category/<?php echo $category->TE_category_slug ?>"> <?php print_r($category->TE_categories); ?></a>
                                             </div>
                                         </div>
                                     </div>
