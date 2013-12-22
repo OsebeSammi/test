@@ -10,29 +10,29 @@ class ArticleController extends Zend_Controller_Action {
     }
 
     public function weekAction() {
-        $request = $this->getRequest();
-        $id = $request->GetParam('id');
-        $modelContent = new Model_Content();
-        $weekContent = $modelContent->getWeek($id);
-        $this->view->weekContent = $weekContent;
+        // $request = $this->getRequest();
+        // $id = $request->GetParam('id');
+        // $modelContent = new Model_Content();
+        // $weekContent = $modelContent->getWeek($id);
+        // $this->view->weekContent = $weekContent;
     }
     public function dayAction(){
-        $request = $this->getRequest();
-        $day = $request->GetParam('day');
-        $modelContent = new Model_Content();
-        $articles = $modelContent->getArticlesByDay($day);
-        print_r($articles);
-        exit;
+        // $request = $this->getRequest();
+        // $day = $request->GetParam('day');
+        // $modelContent = new Model_Content();
+        // $articles = $modelContent->getArticlesByDay($day);
+        // print_r($articles);
+        // exit;
         
     }
 
     public function articleAction() {
-        $request = $this->getRequest();
-        $id = $request->GetParam('id');
-        $modelContent = new Model_Content();
-        $article = $modelContent->getArticleById($id);
-     
-        $this->view->article = $article;
+        // $request = $this->getRequest();
+        // $id = $request->GetParam('id');
+        // $modelContent = new Model_Content();
+        // $article = $modelContent->getArticleById($id);
+//      
+        // $this->view->article = $article;
     }
 
 }

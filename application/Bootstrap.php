@@ -74,6 +74,24 @@ $Router->addRoute("article",
 			array
 			("controller" => "article",
 			"action" => "article") ));
+			
+			
+$Router->addRoute("weekArticles",
+			new Zend_Controller_Router_Route
+			(
+			"/articles/week",
+			array
+			("controller" => "article",
+			"action" => "week") ));
+			
+$Router->addRoute("dayArticles",
+			new Zend_Controller_Router_Route
+			(
+			"/articles/day",
+			array
+			("controller" => "article",
+			"action" => "day") ));
+			
 $Router->addRoute("search",
 			new Zend_Controller_Router_Route
 			(
