@@ -22,7 +22,7 @@ $categories = $this->categories;
     <div class="row">
         <div class="col-xs-12 col-sm-12">
             <div class="span-full">
-                <a href="/filter.php" class="btn btn-default"><img class="home-search-icon" src="/images/arrows/filter.png" /> Show filters</a>
+                <a href="/filter.php" class="btn btn-default"> Show filters</a>
             </div>
         </div>
     </div>
@@ -48,13 +48,17 @@ $categories = $this->categories;
                                         </div>
                                         <div class="col-xs-7 col-sm-7">
                                             <div class="less-title">
+
                                                 <a href="/articles/category/<?php echo $category->TE_category_slug ?>"> <?php print_r($category->TE_categories); ?></a>
+
+                                                <a href="">Information</a>
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
                             </li>
+                  
                              <?php } ?>
 
                         </ul>
