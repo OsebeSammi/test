@@ -63,8 +63,12 @@ class Model_Content extends Zend_Db_Table_Abstract {
 //        if (!$dbTable instanceof Zend_Db_Table_Abstract) {
 //            throw new Exception('Invalid table data gateway provided');
 //        }
-        $this->_dbTable = $dbTable;
-        return $this;
+//        $this->_dbTable = $dbTable;
+//        return $this;
     }
+    public function fetchCasualties(){
+		$select = $this->select();
+		return $this->fetchAll($select);
+	}
 
 }

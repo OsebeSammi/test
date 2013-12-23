@@ -99,3 +99,10 @@ $Router->addRoute("search",
 			array
 			("controller" => "search",
 			"action" => "index") ));
+$Router->addRoute("search/build",
+			new Zend_Controller_Router_Route
+			(
+			"/search/build",
+			array
+			("controller" => "search",
+			"action" => "build") ));
