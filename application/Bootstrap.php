@@ -95,7 +95,7 @@ $Router->addRoute("dayArticles",
 $Router->addRoute("search",
 			new Zend_Controller_Router_Route
 			(
-			"/search/:keyword",
+			"/search/:search_term",
 			array
 			("controller" => "search",
 			"action" => "index") ));
@@ -106,3 +106,10 @@ $Router->addRoute("search/build",
 			array
 			("controller" => "search",
 			"action" => "build") ));
+$Router->addRoute("search/search",
+			new Zend_Controller_Router_Route
+			(
+			"/search/search",
+			array
+			("controller" => "search",
+			"action" => "search") ));

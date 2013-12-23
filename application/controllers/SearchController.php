@@ -11,7 +11,8 @@ class SearchController extends Zend_Controller_Action {
     }
     public function searchAction(){
          $request = $this->getRequest();
-        $term = $request->GetParam('term');
+        $term = $request->GetParam('search_term');
+        
         if ($term || $this->_request->isPost()) {
             $keywords = $this->_request->getParam('search_term');
             $query = Zend_Search_Lucene_Search_QueryParser::parse($keywords);
