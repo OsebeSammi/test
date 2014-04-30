@@ -1,7 +1,27 @@
+<div>
+    <h3>Here is a list of all crops</h3>
+
+</div>
+
 <?php
 $categories = $this->categories;
+//echo print_r($categories);
+while(next($categories))
+{
+    echo $categories[key($categories)]['crop_id']." ";
+    echo $categories[key($categories)]['name_of_crop']." ";
+    echo $categories[key($categories)]['altitude']." ";
+    echo $categories[key($categories)]['farming_method']." ";
+    echo $categories[key($categories)]['time_to_harvest']." ";
+    echo "<br><br>";
+}
+
 ?>
-<div class="container">
+<div>
+    <h3>Here is a list of all crops</h3>
+
+</div>
+<!--<div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-12">
             <div class="jumbotrons">
@@ -28,7 +48,7 @@ $categories = $this->categories;
     </div>
 </div> <!-- /container -->
 
-<div class="container">
+<!--<div class="container">
     <div class="lessons-wrap">
         <div class="class-thumbs-wrap">
             <div class="row">
@@ -36,30 +56,7 @@ $categories = $this->categories;
                     <div class="coursthumbs">
                         <ul class="nopadding nomargin listnone listing-view">
                           
-                             <?php foreach ($categories as $category) { ?>
-                            <li class="less-listing course-thumbs cats">
-                                <a href=""></a>
-                                <div class="bg-arrow">
-                                    <div class="row">
-                                        <div class="col-xs-5 col-sm-5">
-                                            <div class="cat-image">
-                                                <a href="/articles/category/<?php echo $category->TE_category_slug ?>"><img src="/images/content/samplecat.jpg" alt="category"/></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-7 col-sm-7">
-                                            <div class="less-title">
-
-                                                <a href="/articles/category/<?php echo $category->TE_category_slug ?>"> <?php print_r($category->TE_categories); ?></a>
-
-                                               
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </li>
-                  
-                             <?php } ?>
+                            <p>sample content</p>
 
                         </ul>
                     </div>

@@ -2,10 +2,44 @@
 
 class Model_Content extends Zend_Db_Table_Abstract {
 
-    protected $_name = "cipelt_content";
+    protected $_name = "crops";
     protected $_dbTable;
 
-    //Get all articles belonging to this category
+    public function setName($text)
+    {
+
+    }
+
+    public function getCrops()
+    {
+        $select = $this->select()->from('crops');
+        return  $this->fetchAll($select);
+    }
+
+    public function setCrops($crop_id,$name_of_crop,$altitude,$farming_method,$time_to_harvest)
+    {
+
+    }
+
+    public function setAltitude($altitude)
+    {}
+
+    public function getAltitude()
+    {}
+
+    public function setFarmingMethod($farmingMethod)
+    {}
+
+    public function getFarmingMethod()
+    {}
+
+    public function setTimeToHarvest()
+    {}
+
+    public function getTimeToHarvest()
+    {}
+
+    /*//Get all articles belonging to this category
     public function getCategory($slug) {
         $select = $this->select()
                 ->where('TE_category_slug=?', $slug);
@@ -69,6 +103,6 @@ class Model_Content extends Zend_Db_Table_Abstract {
     public function fetchCasualties(){
 		$select = $this->select();
 		return $this->fetchAll($select);
-	}
+	}*/
 
 }

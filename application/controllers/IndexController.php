@@ -11,14 +11,8 @@ class IndexController extends Zend_Controller_Action
     public function indexAction()
     {
        $modelContent=new Model_Content();
-       $categories=$modelContent->getCategories();
+       $categories=$modelContent->getCrops();
        $this->view->categories=$categories;
     }
-    
-	
- 
-    
-
-
 }
 
